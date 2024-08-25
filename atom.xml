@@ -23,7 +23,7 @@
     <published>{{ post.date.toISOString() }}</published>
     <updated>{% if post.updated %}{{ post.updated.toISOString() }}{% else %}{{ post.date.toISOString() }}{% endif %}</updated>
     {% if config.feed.content and post.content %}
-    <content type="html"><![CDATA[{{ post.content | noControlChars | safe }}]]></content>
+    <content type="html"><![CDATA[{{ post.content | noControlChars | styleFilter | safe }}]]></content>
     {% endif %}
     {% if post.description %}
     <summary type="html">{{ post.description }}</summary>
@@ -43,9 +43,6 @@
       {% else %}
     <summary type="html">{{ short_content }}</summary>
       {% endif %}
-    {% endif %}
-    {% if post.image %}
-    <content src="{{ post.image | formatUrl }}" type="image"/>
     {% endif %}
     {% for category in post.categories.toArray() %}
     <category term="{{ category.name }}" scheme="{{ category.permalink }}"/>
