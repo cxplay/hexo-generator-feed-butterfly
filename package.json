@@ -1,7 +1,7 @@
 {
-  "name": "hexo-generator-feed",
-  "version": "3.0.0",
-  "description": "Feed generator plugin for Hexo",
+  "name": "hexo-generator-feed-butterfly",
+  "version": "1.0.0",
+  "description": "Feed generator for Butterfly theme of Hexo.",
   "main": "index",
   "scripts": {
     "eslint": "eslint .",
@@ -17,7 +17,7 @@
     "index.js",
     "rss2.xml"
   ],
-  "repository": "hexojs/hexo-generator-feed",
+  "repository": "cxplay/hexo-generator-feed-butterfly",
   "homepage": "https://hexo.io/",
   "keywords": [
     "hexo",
@@ -28,7 +28,8 @@
   ],
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "maintainers": [
-    "Abner Chou <hi@abnerchou.me> (http://abnerchou.me)"
+    "Abner Chou <hi@abnerchou.me> (http://abnerchou.me)",
+    "CXPLAY <dev@cx.ms> (https://cx.ms/)"
   ],
   "license": "MIT",
   "dependencies": {
