@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-feed-butterfly",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Feed generator for Butterfly theme of Hexo.",
   "main": "index",
   "scripts": {
